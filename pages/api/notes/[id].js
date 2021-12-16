@@ -29,7 +29,7 @@ export default async (req, res) => {
           new: true,
           runValidators: true,
         });
-        const note = await Note.findById(id);
+
         if (!note) {
           return res.status(400).json({ success: false });
         }
