@@ -8,14 +8,14 @@ const index = ({ notes }) => {
     <div className="notes-container">
       <h1>Notes</h1>
       <div className="grid wrapper">
-        {notes.map((notes) => {
+        {notes.map((note) => {
           return (
-            <div key={notes._id}>
+            <div key={note._id}>
               <Card>
                 <Card.Content>
                   <Card.Header>
                     <Link href={`/${note._id}`}>
-                      <a>{notes.title}</a>
+                      <a>{note.title}</a>
                     </Link>
                   </Card.Header>
                 </Card.Content>

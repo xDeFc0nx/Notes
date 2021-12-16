@@ -44,3 +44,17 @@ h1 {
 .create:hover {
   color: #fff;
 }
+
+.form-container {
+  width: 400px;
+  margin: 20px auto;
+}
+.note-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
